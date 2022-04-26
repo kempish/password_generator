@@ -30,7 +30,7 @@ def limited_answer_range(prompt, down=None, up=None):
 def limited_answer(prompt, valid_input):
     answer = input(prompt)
     if answer not in valid_input:
-        limited_answer(f"Please enter valid data: ", valid_input)
+        return limited_answer(f"Please enter valid data: ", valid_input)
     else:
         return answer
 
